@@ -14,7 +14,7 @@ export default function MeritSection() {
           <FadeIn delay={1}>
             <div className="merit-block-label">経営者のメリット</div>
             <div className="merit-card card-employee">
-              <h3>社長の手取りが<br />年間100万円以上アップ</h3>
+              <h3>社長の手取りが<br />年間300万円以上アップ</h3>
               <p>役員報酬の構成最適化・社宅・出張旅費などを組み合わせ、給与総額は変えずに社長個人の社保・所得税負担を合法的に軽減。将来の退職金原資の積み上げも同時に実現します。</p>
             </div>
           </FadeIn>

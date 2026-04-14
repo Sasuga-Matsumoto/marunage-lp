@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="hero-glow"></div>
       <div className="inner">
         <div className="hero-label">PLEX MARUNAGE TAX OPTIMIZATION</div>
-        <h1 className="hero-title">年間100万円以上の手取りアップ<br />PLEX丸投げ節税</h1>
+        <h1 className="hero-title">年間300万円以上の手取りアップ<br />PLEX丸投げ節税</h1>
         <div className="hero-sub-pitch">
           <span>完全成果報酬</span>
           <span>否認保証付き</span>
