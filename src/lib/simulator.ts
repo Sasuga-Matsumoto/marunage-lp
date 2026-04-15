@@ -8,10 +8,11 @@ const NICHITO_TIMES_PER_MONTH = 10;      // 日当回数/月
 const YAKUIN_DISPERSE_AMOUNT = 104000;   // 役員報酬分散額（円）
 const YAKUIN_DISPERSE_COUNT = 3;         // 分散人数
 const SHATAKU_RENT_RATIO = 0.25;         // 家賃 = 月給 × 1/4
-const SHATAKU_REDUCTION_RATE = 0.8;      // 役員社宅の経費化割合
+const SHATAKU_REDUCTION_RATE = 0.9;      // 役員社宅の経費化割合
 const MEAL_COUNT_PER_MONTH = 15;         // 残業食事回数/月
 const MEAL_UNIT = 2000;                  // 食事単価（円）
-const DB_CONTRIB = 100000;               // 選択制DB 拠出額（円/月）
+const DB_CONTRIB_RATE = 0.15;            // 選択制DB 拠出額 = 月額 × 15%
+const MIN_MONTHLY_SALARY = 100000;       // スキーム適用後の月額下限（最適化後の目標月額）
 
 // ===== 税・保険料定数（シート「定数」より） =====
 const EMPLOYMENT_RATE = 0.006;           // 雇用保険料率 0.60%
@@ -142,8 +143,10 @@ export function computeTax(monthlySalary: number, flags: SchemeFlags): TaxResult
   if (flags.yakuinOpt) m -= YAKUIN_DISPERSE_AMOUNT * YAKUIN_DISPERSE_COUNT;
   if (flags.shataku) m -= monthlySalary * SHATAKU_RENT_RATIO * SHATAKU_REDUCTION_RATE;
   if (flags.zangyoMeal) m -= MEAL_COUNT_PER_MONTH * MEAL_UNIT;
-  if (flags.db) m -= DB_CONTRIB;
-  m = Math.max(0, m);
+  if (flags.db) m -= monthlySalary * DB_CONTRIB_RATE;
+  const anySchemeOn = flags.nichito || flags.yakuinOpt || flags.shataku || flags.zangyoMeal || flags.db;
+  const floor = anySchemeOn ? Math.min(MIN_MONTHLY_SALARY, monthlySalary) : 0;
+  m = Math.max(floor, m);
 
   const annualIncome = m * 12;
   const ins = lookupInsurance(m);
