@@ -9,7 +9,7 @@ export default function HeroSection() {
         <h1 className="hero-title">年間300万円以上の手取りアップ<br />PLEX丸投げ節税</h1>
         <div className="hero-sub-pitch">
           <span>完全成果報酬</span>
-          <span>否認保証付き</span>
+          <span>否認補償付き</span>
           <span>手間なし</span>
         </div>
         <div className="cta-group">

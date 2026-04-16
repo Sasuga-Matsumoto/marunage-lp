@@ -51,7 +51,7 @@ export default function PainSolutionSection() {
             </div>
             <div className="solution-card">
               <div className="solution-num">03</div>
-              <h4>業界唯一の<br />否認リスク保証</h4>
+              <h4>業界唯一の<br />否認リスク補償</h4>
               <p>「提案して終わり」の節税コンサルとは違い、運用後の責任までPLEXが引き受けます。万一の否認時も当社が補償し、安心してご導入いただけます。</p>
             </div>
           </div>

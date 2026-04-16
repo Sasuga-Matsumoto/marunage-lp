@@ -152,13 +152,13 @@ export default function DownloadForm() {
                 <Image src="/doc_thumb_flow.png" alt="サービス概要" width={460} height={259} loading="lazy" />
                 <Image src="/doc_thumb_merit.png" alt="効果・課金イメージ" width={460} height={259} loading="lazy" />
               </div>
-              <p className="doc-desc">6つの節税スキームの概要、完全成果報酬の課金ロジック、否認保証の補償範囲、導入事例までを分かりやすくまとめた資料です。</p>
+              <p className="doc-desc">6つの節税スキームの概要、完全成果報酬の課金ロジック、否認補償の補償範囲、導入事例までを分かりやすくまとめた資料です。</p>
               <div className="doc-contents">
                 <h3>主な内容</h3>
                 <ul>
                   <li>6つの節税スキームの概要と効果イメージ</li>
                   <li>完全成果報酬・月次課金の仕組み</li>
-                  <li>否認保証の補償範囲と発動条件</li>
+                  <li>否認補償の補償範囲と発動条件</li>
                   <li>導入から運用開始までの流れ</li>
                   <li>導入事例（業種・規模別の効果）</li>
                 </ul>
