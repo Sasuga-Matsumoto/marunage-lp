@@ -149,8 +149,8 @@ export default function DownloadForm() {
               <h2>3分でわかる！<br />PLEX丸投げ節税<br />サービス資料</h2>
               <div className="doc-thumbs">
                 {/* TODO: 丸投げ節税専用のサムネイル画像に差し替え */}
-                <Image src="/doc_thumb_flow.png" alt="サービス概要" width={460} height={259} loading="lazy" />
-                <Image src="/doc_thumb_merit.png" alt="効果・課金イメージ" width={460} height={259} loading="lazy" />
+                <Image src="/doc_thumb_flow.png" alt="なぜ節税は進まないのか？" width={460} height={259} loading="lazy" />
+                <Image src="/doc_thumb_merit.png" alt="削減の事例" width={460} height={259} loading="lazy" />
               </div>
               <p className="doc-desc">6つの節税スキームの概要、完全成果報酬の課金ロジック、否認補償の補償範囲、導入事例までを分かりやすくまとめた資料です。</p>
               <div className="doc-contents">
