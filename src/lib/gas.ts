@@ -1,5 +1,4 @@
-// TODO: 丸投げ節税用のGoogle Apps Scriptをデプロイしたらここに Web App URL を設定する
-const GAS_URL = '';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbxPow5I1MKgvPpli95IA51pFWrFMhxAwT5YSWhgSFisOTfZ7RssXtCY_y-MrKaHNy3m/exec';
 
 const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'] as const;
 const UTM_STORAGE_KEY = 'utm_params';
