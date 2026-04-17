@@ -4,8 +4,7 @@ import './globals.css';
 import Footer from '@/src/components/Footer';
 import UtmCapture from '@/src/components/UtmCapture';
 
-// TODO: 本番発行後にID文字列（例: 'GTM-XXXXXXX'）を設定。空文字のうちはGTMタグを埋め込まない。
-const GTM_ID_MAIN = '';
+const GTM_ID_MAIN = 'GTM-PKW8GPPQ';
 const GTM_ID_AB = '';
 
 export const metadata: Metadata = {
@@ -28,7 +27,6 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        {/* TODO: 本番GTMコンテナID発行後に差し替え（計測用） */}
         {GTM_ID_MAIN ? (
           <Script id="gtm" strategy="afterInteractive">{`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
