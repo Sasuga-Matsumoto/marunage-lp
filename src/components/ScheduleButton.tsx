@@ -27,7 +27,7 @@ export default function ScheduleButton({
 
   return (
     <a
-      href="https://calendar.app.google/z48uzMWqwPogLo9X6"
+      href="https://calendar.app.google/Pn4eARE5Q7MWJ5wV7"
       target="_blank"
       rel="noopener noreferrer"
       className={className || 'thanks-cta'}
