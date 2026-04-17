@@ -5,11 +5,11 @@ import Footer from '@/src/components/Footer';
 import UtmCapture from '@/src/components/UtmCapture';
 
 const GTM_ID_MAIN = 'GTM-PKW8GPPQ';
-const GTM_ID_AB = '';
+const GTM_ID_AB = 'GTM-T7XC678S';
 
 export const metadata: Metadata = {
   title: 'PLEX丸投げ節税 | 完全成果報酬で年間300万円以上の手取りアップ',
-  description: 'PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化・企業型DBなど6つの節税スキームの提案から規程整備・月次運用までを完全成果報酬で丸ごと引き受けるフルマネージドサービスです。初期費用0円・否認補償付き。',
+  description: 'PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化・企業型DBなど多岐にわたる節税スキームの提案から規程整備・月次運用までを完全成果報酬で丸ごと引き受けるフルマネージドサービスです。初期費用0円・否認補償付き。',
   other: {
     'theme-color': '#1E3A8A',
   },

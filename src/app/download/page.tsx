@@ -5,7 +5,7 @@ import FormStartTracker from '@/src/components/FormStartTracker';
 
 export const metadata: Metadata = {
   title: '資料ダウンロード | PLEX丸投げ節税',
-  description: 'PLEX丸投げ節税のサービス資料をダウンロードいただけます。6つの節税スキームの概要、完全成果報酬の課金ロジック、導入事例をまとめています。',
+  description: 'PLEX丸投げ節税のサービス資料をダウンロードいただけます。節税スキームの概要、完全成果報酬の課金ロジック、導入事例をまとめています。',
 };
 
 export default function DownloadPage() {

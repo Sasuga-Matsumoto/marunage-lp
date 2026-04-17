@@ -47,7 +47,7 @@ export default function PainSolutionSection() {
             <div className="solution-card">
               <div className="solution-num">02</div>
               <h4>規程整備から月次運用まで<br />全て丸投げ</h4>
-              <p>規程作成から月次運用・社労士折衝まで、PLEXが一括で代行。お客様は給与データの提出と月次レポートの承認だけで、本業に集中いただけます。</p>
+              <p>導入から運用まで一気通貫で、PLEXが代行。お客様は給与データの提出と月次レポートの承認だけで、本業に集中いただけます。</p>
             </div>
             <div className="solution-card">
               <div className="solution-num">03</div>
