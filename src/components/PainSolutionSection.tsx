@@ -14,15 +14,15 @@ export default function PainSolutionSection() {
           <div className="pain-cards">
             <div className="pain-card">
               <div className="pain-icon">!</div>
-              <p>節税コンサルに払ったのに<br />思ったほど効果が出ない</p>
+              <p>法人税・所得税の負担が重いが<br />節税手段が限られている</p>
             </div>
             <div className="pain-card">
               <div className="pain-icon">!</div>
-              <p>規程整備や月次運用の手間が多く<br />導入に踏み切れない</p>
+              <p>節税制度を整備したいが<br />手間がかかりすぎて手が回らない</p>
             </div>
             <div className="pain-card">
               <div className="pain-icon">!</div>
-              <p>否認されたら全て自己責任で<br />リスクを取り切れない</p>
+              <p>節税を検討しても<br />リスクが曖昧で踏み切れない</p>
             </div>
           </div>
         </FadeIn>
@@ -46,13 +46,13 @@ export default function PainSolutionSection() {
             </div>
             <div className="solution-card">
               <div className="solution-num">02</div>
-              <h4>規程整備から月次運用まで<br />全て丸投げ</h4>
-              <p>導入から運用まで一気通貫で、PLEXが代行。お客様は給与データの提出と月次レポートの承認だけで、本業に集中いただけます。</p>
+              <h4>規程整備から月次運用まで<br />フルサポート</h4>
+              <p>制度設計、各種規程・届け出、運用フロー、証拠管理まで網羅的に雛形提供。</p>
             </div>
             <div className="solution-card">
               <div className="solution-num">03</div>
-              <h4>業界唯一の<br />否認リスク補償</h4>
-              <p>「提案して終わり」の節税コンサルとは違い、運用後の責任までPLEXが引き受けます。万一の否認時も当社が補償し、安心してご導入いただけます。</p>
+              <h4>複数リスクをケア</h4>
+              <p>制度の目的設定、報酬・手当の設定背景、適用範囲の定義、運用時の留意点まで、複数観点の対策サンプルをパッケージで提供します。</p>
             </div>
           </div>
         </FadeIn>

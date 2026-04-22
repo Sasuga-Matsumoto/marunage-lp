@@ -23,7 +23,7 @@ export default function ThanksDownloadRedesign() {
           <div className="thanks-features">
             <div className="thanks-feature-item">
               <div className="thanks-feature-number">0<span style={{ fontSize: '0.9rem' }}>円</span></div>
-              <div className="thanks-feature-label">完全成果報酬</div>
+              <div className="thanks-feature-label">会社負担削減</div>
             </div>
             <div className="thanks-feature-item">
               <div className="thanks-feature-number">20<span style={{ fontSize: '0.9rem' }}>%</span></div>
@@ -31,7 +31,7 @@ export default function ThanksDownloadRedesign() {
             </div>
             <div className="thanks-feature-item">
               <div className="thanks-feature-number">100<span style={{ fontSize: '0.9rem' }}>%</span></div>
-              <div className="thanks-feature-label">否認補償</div>
+              <div className="thanks-feature-label">複数リスクケア</div>
             </div>
           </div>
 

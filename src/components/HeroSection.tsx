@@ -8,9 +8,9 @@ export default function HeroSection() {
         <div className="hero-label">PLEX MARUNAGE TAX OPTIMIZATION</div>
         <h1 className="hero-title">年間300万円以上の手取りアップ<br />PLEX丸投げ節税</h1>
         <div className="hero-sub-pitch">
-          <span>完全成果報酬</span>
-          <span>否認補償付き</span>
-          <span>手間なし</span>
+          <span>会社負担削減</span>
+          <span>複数リスクケア</span>
+          <span>お手間なし</span>
         </div>
         <div className="cta-group">
           <TrackedLink href="/download/" className="btn btn-primary" eventParams={{ form_type: 'download', cta_location: 'hero' }}>まずは無料で資料請求</TrackedLink>
