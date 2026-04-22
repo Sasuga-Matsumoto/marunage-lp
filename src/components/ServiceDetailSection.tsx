@@ -11,7 +11,7 @@ const services: { num: string; title: string; desc: string; delay: number }[] = 
   {
     num: '02',
     title: '出張旅費日当の最大化',
-    desc: '出張旅費規程を整備し、日当・宿泊費の非課税枠を最大限活用できる状態に運用します。',
+    desc: '出張旅費規程の雛形と運用フローをご提供し、日当・宿泊費の非課税枠を最大限活用できる状態をサポートします。',
     delay: 1,
   },
   {
@@ -22,8 +22,8 @@ const services: { num: string; title: string; desc: string; delay: number }[] = 
   },
   {
     num: '04',
-    title: '残業食事規程の整備',
-    desc: '残業時の食事支給を非課税で運用するための規程整備と運用支援を行います。',
+    title: '残業食事規程の整備支援',
+    desc: '残業時の食事支給を非課税で運用するための規程の雛形と運用フローをご提供します。',
     delay: 0,
   },
   {
@@ -47,7 +47,7 @@ export default function ServiceDetailSection() {
         <FadeIn className="section-center">
           <div className="section-label">SERVICE</div>
           <h2 className="section-title">節税対策を、ぜんぶ丸投げ</h2>
-          <p className="section-desc">一社一社の状況に合わせて効く施策を組み合わせ、PLEXが制度設計から規程整備までフルサポートします。以下は代表例です。</p>
+          <p className="section-desc">一社一社の状況に合わせて効く施策を組み合わせ、PLEXが制度設計と規程整備に必要な雛形・情報をご提供します。以下は代表例です。</p>
         </FadeIn>
 
         <div className="service-grid">

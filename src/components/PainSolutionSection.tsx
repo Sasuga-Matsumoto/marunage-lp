@@ -46,7 +46,7 @@ export default function PainSolutionSection() {
             </div>
             <div className="solution-card">
               <div className="solution-num">02</div>
-              <h4>規程整備から月次運用まで<br />フルサポート</h4>
+              <h4>制度設計から運用フローまで<br />フルサポート</h4>
               <p>制度設計、各種規程・届け出、運用フロー、証拠管理まで網羅的に雛形提供。</p>
             </div>
             <div className="solution-card">
