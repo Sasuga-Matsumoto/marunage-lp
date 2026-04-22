@@ -41,8 +41,8 @@ export default function PainSolutionSection() {
           <div className="solution-cards">
             <div className="solution-card">
               <div className="solution-num">01</div>
-              <h4>効果が出た分だけ、<br />完全成果報酬</h4>
-              <p>初期費用0円、月次効果額の20%のみをお支払いいただく完全成果報酬。効果が出ない月は課金ゼロ、実質ノーリスクで導入いただけます。</p>
+              <h4>複数の節税制度で<br />手取りアップ</h4>
+              <p>社宅・旅費規程・役員報酬最適化・企業型DBなど複数制度を組み合わせて適用。役員個人の手取りと会社の社保・税負担を同時に最適化します。</p>
             </div>
             <div className="solution-card">
               <div className="solution-num">02</div>
