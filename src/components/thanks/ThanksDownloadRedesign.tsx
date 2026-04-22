@@ -31,7 +31,7 @@ export default function ThanksDownloadRedesign() {
             </div>
             <div className="thanks-feature-item">
               <div className="thanks-feature-number">お手間なし</div>
-              <div className="thanks-feature-desc">導入から運用まで一気通貫で代行</div>
+              <div className="thanks-feature-desc">導入から運用まで一気通貫でサポート</div>
             </div>
           </div>
 

@@ -4,7 +4,7 @@ import TrackedLink from '@/src/components/TrackedLink';
 const services: { num: string; title: string; desc: string; delay: number }[] = [
   {
     num: '01',
-    title: '借上社宅の導入・運用代行',
+    title: '借上社宅の導入・運用支援',
     desc: '会社が住居を借上げ、役員・従業員へ社宅として貸与。社保等級・所得税負担を最適化します。',
     delay: 0,
   },
@@ -47,7 +47,7 @@ export default function ServiceDetailSection() {
         <FadeIn className="section-center">
           <div className="section-label">SERVICE</div>
           <h2 className="section-title">節税対策を、ぜんぶ丸投げ</h2>
-          <p className="section-desc">一社一社の状況に合わせ、効く施策をすべて組み合わせてPLEXが運用代行します。以下は代表例です。</p>
+          <p className="section-desc">一社一社の状況に合わせて効く施策を組み合わせ、PLEXが制度設計から規程整備までフルサポートします。以下は代表例です。</p>
         </FadeIn>
 
         <div className="service-grid">
