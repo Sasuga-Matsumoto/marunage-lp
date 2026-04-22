@@ -11,7 +11,7 @@ export default function ThanksContactRedesign() {
 
           <h1 className="thanks-title">お問い合わせありがとうございます</h1>
 
-          <p className="thanks-message">PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化など<br />多岐にわたる節税スキームを<strong>完全成果報酬で丸ごと代行</strong>するサービスです。</p>
+          <p className="thanks-message">PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化など複数の節税制度を組み合わせて<br />社長の手取りアップと会社のコスト削減を同時に実現するサービスです。</p>
 
           <div className="thanks-schedule">
             <p className="thanks-schedule-text">お問い合わせ内容を踏まえて、30分程度でご説明します</p>
@@ -22,16 +22,16 @@ export default function ThanksContactRedesign() {
 
           <div className="thanks-features">
             <div className="thanks-feature-item">
-              <div className="thanks-feature-number">0<span style={{ fontSize: '0.9rem' }}>円</span></div>
-              <div className="thanks-feature-label">会社負担削減</div>
+              <div className="thanks-feature-number">会社負担削減</div>
+              <div className="thanks-feature-desc">社保の会社負担と税金を削減</div>
             </div>
             <div className="thanks-feature-item">
-              <div className="thanks-feature-number">20<span style={{ fontSize: '0.9rem' }}>%</span></div>
-              <div className="thanks-feature-label">月次効果額の課金率</div>
+              <div className="thanks-feature-number">複数リスクケア</div>
+              <div className="thanks-feature-desc">複数観点の対策サンプルをご提供</div>
             </div>
             <div className="thanks-feature-item">
-              <div className="thanks-feature-number">100<span style={{ fontSize: '0.9rem' }}>%</span></div>
-              <div className="thanks-feature-label">複数リスクケア</div>
+              <div className="thanks-feature-number">お手間なし</div>
+              <div className="thanks-feature-desc">導入から運用まで一気通貫で代行</div>
             </div>
           </div>
 
@@ -49,15 +49,15 @@ export default function ThanksContactRedesign() {
             <div className="thanks-step">
               <div className="thanks-step-num">2</div>
               <div className="thanks-step-content">
-                <div className="thanks-step-title">無料診断・効果見込みのご提示</div>
-                <div className="thanks-step-desc">書面で具体的な年間効果額をお見せします</div>
+                <div className="thanks-step-title">30分程度のオンライン説明</div>
+                <div className="thanks-step-desc">サービスの全体像と削減シミュレーションをご案内</div>
               </div>
             </div>
             <div className="thanks-step">
               <div className="thanks-step-num">3</div>
               <div className="thanks-step-content">
-                <div className="thanks-step-title">規程整備・月次運用開始</div>
-                <div className="thanks-step-desc">導入から運用まで一気通貫で代行</div>
+                <div className="thanks-step-title">導入サポート</div>
+                <div className="thanks-step-desc">最短1週間で運用開始</div>
               </div>
             </div>
           </div>

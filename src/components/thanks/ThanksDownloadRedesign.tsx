@@ -11,7 +11,7 @@ export default function ThanksDownloadRedesign() {
 
           <h1 className="thanks-title">資料をお送りしました</h1>
 
-          <p className="thanks-message">PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化など<br />多岐にわたる節税スキームを<strong>完全成果報酬で丸ごと代行</strong>するサービスです。</p>
+          <p className="thanks-message">PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化など複数の節税制度を組み合わせて<br />社長の手取りアップと会社のコスト削減を同時に実現するサービスです。</p>
 
           <div className="thanks-schedule">
             <p className="thanks-schedule-text">30分程度のオンライン説明で、サービスの全体像をお伝えします</p>
@@ -22,16 +22,16 @@ export default function ThanksDownloadRedesign() {
 
           <div className="thanks-features">
             <div className="thanks-feature-item">
-              <div className="thanks-feature-number">0<span style={{ fontSize: '0.9rem' }}>円</span></div>
-              <div className="thanks-feature-label">会社負担削減</div>
+              <div className="thanks-feature-number">会社負担削減</div>
+              <div className="thanks-feature-desc">社保の会社負担と税金を削減</div>
             </div>
             <div className="thanks-feature-item">
-              <div className="thanks-feature-number">20<span style={{ fontSize: '0.9rem' }}>%</span></div>
-              <div className="thanks-feature-label">月次効果額の課金率</div>
+              <div className="thanks-feature-number">複数リスクケア</div>
+              <div className="thanks-feature-desc">複数観点の対策サンプルをご提供</div>
             </div>
             <div className="thanks-feature-item">
-              <div className="thanks-feature-number">100<span style={{ fontSize: '0.9rem' }}>%</span></div>
-              <div className="thanks-feature-label">複数リスクケア</div>
+              <div className="thanks-feature-number">お手間なし</div>
+              <div className="thanks-feature-desc">導入から運用まで一気通貫で代行</div>
             </div>
           </div>
 
