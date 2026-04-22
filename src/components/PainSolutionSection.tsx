@@ -41,7 +41,7 @@ export default function PainSolutionSection() {
           <div className="solution-cards">
             <div className="solution-card">
               <div className="solution-num">01</div>
-              <h4>複数の節税制度で<br />手取りアップ</h4>
+              <h4>複数の制度利用で<br />手取りアップ</h4>
               <p>社宅・旅費規程・役員報酬最適化・企業型DBなど複数制度を組み合わせて適用。役員個人の手取りと会社の社保・税負担を同時に最適化します。</p>
             </div>
             <div className="solution-card">
