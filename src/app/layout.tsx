@@ -8,8 +8,8 @@ const GTM_ID_MAIN = 'GTM-PKW8GPPQ';
 const GTM_ID_AB = 'GTM-T7XC678S';
 
 export const metadata: Metadata = {
-  title: 'PLEX丸投げ節税 | 完全成果報酬で年間300万円以上の手取りアップ',
-  description: 'PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化・企業型DBなど多岐にわたる節税スキームの提案から規程整備までを完全成果報酬でフルサポートするサービスです。初期費用0円・否認補償付き。',
+  title: 'PLEX丸投げ節税 | 複数の節税制度を組み合わせて年間300万円以上の手取りアップ',
+  description: 'PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化・企業型DBなど多岐にわたる節税スキームの提案から規程整備までをフルサポートするサービスです。社長の手取りアップと会社のコスト削減を同時に実現します。',
   other: {
     'theme-color': '#1E3A8A',
   },

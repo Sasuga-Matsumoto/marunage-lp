@@ -18,7 +18,7 @@ export default function PainSolutionSection() {
             </div>
             <div className="pain-card">
               <div className="pain-icon">!</div>
-              <p>節税制度を整備したいが<br />手間がかかりすぎて手が回らない</p>
+              <p>各種制度を整備したいが<br />手間がかかりすぎて手が回らない</p>
             </div>
             <div className="pain-card">
               <div className="pain-icon">!</div>

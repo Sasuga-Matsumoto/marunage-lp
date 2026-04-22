@@ -148,8 +148,7 @@ export default function DownloadForm() {
               <div className="doc-label">SERVICE DOCUMENT</div>
               <h2>3分でわかる！<br />PLEX丸投げ節税<br />サービス資料</h2>
               <div className="doc-thumbs">
-                {/* TODO: 丸投げ節税専用のサムネイル画像に差し替え */}
-                <Image src="/doc_thumb_flow.png" alt="なぜ節税は進まないのか？" width={460} height={259} loading="lazy" />
+                <Image src="/doc_thumb_flow.png" alt="なぜ対策は進まないのか？" width={460} height={259} loading="lazy" />
                 <Image src="/doc_thumb_merit.png" alt="削減の事例" width={460} height={259} loading="lazy" />
               </div>
               <p className="doc-desc">節税が進まない構造的な理由から、5つの削減事例と具体的な数字、導入・運用の流れまでを分かりやすくまとめた資料です。</p>
@@ -158,7 +157,7 @@ export default function DownloadForm() {
                 <ul>
                   <li>税金負担の現状と節税の手残りインパクト</li>
                   <li>5つの削減事例と具体的な削減シミュレーション</li>
-                  <li>完全成果報酬・手間なし・否認補償の仕組み</li>
+                  <li>会社負担削減・複数リスクケア・お手間なしの仕組み</li>
                   <li>導入から月次運用までの流れ</li>
                 </ul>
               </div>

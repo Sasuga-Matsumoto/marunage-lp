@@ -22,7 +22,7 @@ export default function MeritSection() {
             <div className="merit-block-label">会社のメリット</div>
             <div className="merit-card card-company">
               <h3>会社の社保負担も<br />年間数百万円ダウン</h3>
-              <p>社会保険料は労使折半のため、役員・従業員分の保険料削減は会社負担分も同額削減できます。福利厚生の充実による採用力・定着率の向上、規程整備による税務リスクの低減も同時に進みます。</p>
+              <p>社会保険料は労使折半のため、役員・従業員分の保険料削減は会社負担分も同額削減できます。福利厚生の充実による採用力・定着率の向上も同時に実現します。</p>
             </div>
           </FadeIn>
         </div>
