@@ -11,7 +11,7 @@ export default function ThanksContactRedesign() {
 
           <h1 className="thanks-title">お問い合わせありがとうございます</h1>
 
-          <p className="thanks-message">PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化など複数の節税制度を組み合わせて<br />社長の手取りアップと会社のコスト削減を同時に実現するサービスです。</p>
+          <p className="thanks-message">PLEX丸投げ節税は、複数の節税制度を組み合わせて<br />社長の手取りアップと会社のコスト削減を同時に実現するサービスです。</p>
 
           <div className="thanks-schedule">
             <p className="thanks-schedule-text">お問い合わせ内容を踏まえて、30分程度でご説明します</p>

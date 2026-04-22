@@ -11,7 +11,7 @@ export default function ThanksDownloadRedesign() {
 
           <h1 className="thanks-title">資料をお送りしました</h1>
 
-          <p className="thanks-message">PLEX丸投げ節税は、社宅・旅費規程・役員報酬最適化など複数の節税制度を組み合わせて<br />社長の手取りアップと会社のコスト削減を同時に実現するサービスです。</p>
+          <p className="thanks-message">PLEX丸投げ節税は、複数の節税制度を組み合わせて<br />社長の手取りアップと会社のコスト削減を同時に実現するサービスです。</p>
 
           <div className="thanks-schedule">
             <p className="thanks-schedule-text">30分程度のオンライン説明で、サービスの全体像をお伝えします</p>
