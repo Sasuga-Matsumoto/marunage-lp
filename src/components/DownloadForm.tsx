@@ -15,8 +15,6 @@ interface FormErrors {
   email?: string;
   phone?: string;
   employees?: string;
-  position?: string;
-  referralSource?: string;
 }
 
 function FadeIn({ children, className = '' }: { children: React.ReactNode; className?: string }) {
@@ -85,12 +83,6 @@ export default function DownloadForm() {
     const employees = (form.elements.namedItem('employees') as HTMLSelectElement).value;
     if (!employees) newErrors.employees = '従業員数を選択してください';
 
-    const position = (form.elements.namedItem('position') as HTMLInputElement).value.trim();
-    if (!position) newErrors.position = '役職を入力してください';
-
-    const referralSource = (form.elements.namedItem('referralSource') as HTMLSelectElement).value;
-    if (!referralSource) newErrors.referralSource = '流入経路を選択してください';
-
     setErrors(newErrors);
     const hasErrors = Object.values(newErrors).some(Boolean);
     return hasErrors ? newErrors : null;
@@ -115,9 +107,11 @@ export default function DownloadForm() {
       email: (form.elements.namedItem('email') as HTMLInputElement).value.trim(),
       phone: (form.elements.namedItem('phone') as HTMLInputElement).value.trim(),
       employees: (form.elements.namedItem('employees') as HTMLSelectElement).value || '',
-      position: (form.elements.namedItem('position') as HTMLInputElement).value.trim() || '',
-      inquiry: (form.elements.namedItem('message') as HTMLTextAreaElement).value.trim() || '',
-      referralSource: (form.elements.namedItem('referralSource') as HTMLSelectElement).value || '',
+      // 役職/問い合わせ内容/流入経路はフォーム最適化で削除。
+      // スプシ(LP_リード)の列構成は維持するため、空値で送信する。
+      position: '',
+      inquiry: '',
+      referralSource: '',
       formType: '資料請求',
       ...utm,
     };
@@ -220,33 +214,6 @@ export default function DownloadForm() {
                     <option value="301+">301名以上</option>
                   </select>
                   <div className="inline-error">{errors.employees || ''}</div>
-                </div>
-
-                <div className="input-group">
-                  <label htmlFor="position">役職<span className="required">必須</span></label>
-                  <input type="text" id="position" name="position" placeholder="例: 代表取締役" className={errors.position ? 'input-error' : ''} required />
-                  <div className="inline-error">{errors.position || ''}</div>
-                </div>
-
-                <div className="input-group">
-                  <label htmlFor="message">ご質問・ご要望</label>
-                  <textarea id="message" name="message" rows={4} placeholder="ご質問やご要望があればご記入ください" />
-                </div>
-
-                <div className="input-group">
-                  <label htmlFor="referralSource">PLEX丸投げ節税をどこで知りましたか？<span className="required">必須</span></label>
-                  <select id="referralSource" name="referralSource" className={errors.referralSource ? 'input-error' : ''} required>
-                    <option value="">選択してください</option>
-                    <option value="Facebook/Instagram">Facebook/Instagram</option>
-                    <option value="WEB検索">WEB検索</option>
-                    <option value="LinkedIn">LinkedIn</option>
-                    <option value="X（旧Twitter）">X（旧Twitter）</option>
-                    <option value="展示会">展示会</option>
-                    <option value="イベント">イベント</option>
-                    <option value="知人/取引先からの紹介">知人/取引先からの紹介</option>
-                    <option value="その他">その他</option>
-                  </select>
-                  <div className="inline-error">{errors.referralSource || ''}</div>
                 </div>
 
                 <p className="privacy-consent">
