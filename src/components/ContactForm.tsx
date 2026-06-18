@@ -6,6 +6,7 @@ import { getUtmParams, submitToGAS } from '@/src/lib/gas';
 import { scrollToFirstError } from '@/src/lib/form-utils';
 import { getActiveVariant } from '@/src/lib/ab-tests';
 import { saveCalendarPrefill } from '@/src/components/calendar/CalendarEmbed';
+import FormSubmitOverlay from '@/src/components/FormSubmitOverlay';
 
 interface FormErrors {
   company?: string;
@@ -144,13 +145,7 @@ export default function ContactForm() {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="inner">
-          <div className="page-hero-label">CONTACT</div>
-          <h1>お問い合わせ</h1>
-        </div>
-      </section>
-
+      <FormSubmitOverlay show={submitting} />
       <section className="contact-section">
         <div className="contact-inner">
           <FadeIn>

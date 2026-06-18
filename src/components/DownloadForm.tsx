@@ -7,6 +7,7 @@ import { getUtmParams, submitToGAS } from '@/src/lib/gas';
 import { scrollToFirstError } from '@/src/lib/form-utils';
 import { getActiveVariant } from '@/src/lib/ab-tests';
 import { saveCalendarPrefill } from '@/src/components/calendar/CalendarEmbed';
+import FormSubmitOverlay from '@/src/components/FormSubmitOverlay';
 
 interface FormErrors {
   company?: string;
@@ -135,6 +136,7 @@ export default function DownloadForm() {
 
   return (
     <>
+      <FormSubmitOverlay show={submitting} />
       <section className="page-hero">
         <div className="inner">
           <div className="page-hero-label">DOWNLOAD</div>

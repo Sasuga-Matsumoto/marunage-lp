@@ -45,6 +45,8 @@ export async function submitToGAS(data: Record<string, string>): Promise<void> {
   }
   await fetch(GAS_URL, {
     method: 'POST',
+    // keepalive: 送信中にページを閉じる/戻る/遷移しても POST を送り切る（取りこぼし防止）。
+    keepalive: true,
     mode: 'no-cors',
     headers: { 'Content-Type': 'text/plain' },
     body: JSON.stringify({ ...data, service: 'marunage' }),
