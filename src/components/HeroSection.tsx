@@ -1,6 +1,13 @@
+'use client';
+
 import TrackedLink from '@/src/components/TrackedLink';
+import { useABVariant } from '@/src/lib/use-ab-variant';
 
 export default function HeroSection() {
+  // contact-direct-calendar A/Bテストに応じて hero の予約CTA文言を切替
+  const abVariant = useABVariant('contact-direct-calendar');
+  const contactCtaText = abVariant === 'calendar' ? '無料で相談する' : '無料相談を予約する';
+
   return (
     <section className="hero">
       <div className="hero-glow"></div>
@@ -14,7 +21,7 @@ export default function HeroSection() {
         </div>
         <div className="cta-group">
           <TrackedLink href="/download/" className="btn btn-primary" eventParams={{ form_type: 'download', cta_location: 'hero' }}>まずは無料で資料請求</TrackedLink>
-          <TrackedLink href="/contact/" className="btn btn-outline-blue hero-contact" eventParams={{ form_type: 'contact', cta_location: 'hero' }}>無料相談を予約する</TrackedLink>
+          <TrackedLink href="/contact/" className="btn btn-outline-blue hero-contact" eventParams={{ form_type: 'contact', cta_location: 'hero' }}>{contactCtaText}</TrackedLink>
         </div>
         <div className="hero-note">※ 効果は企業規模・役員報酬・出張頻度等により変動します</div>
       </div>
