@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import CalendarTrack from './CalendarTrack';
 import './calendar.css';
 
 /** GAS 側 SERVICES マップで定義しているサービスキー */
@@ -206,14 +207,6 @@ export default function CalendarBookingClient({
   }, [slots]);
 
   // 日付+時刻 → スロット の高速ルックアップ
-  const slotByDateTime = useMemo(() => {
-    const map: Record<string, Slot> = {};
-    slots.forEach((s) => {
-      map[`${s.date}_${s.time}`] = s;
-    });
-    return map;
-  }, [slots]);
-
   const weekDays = useMemo(() => {
     // weekStart から土日をスキップして N 平日を生成
     const days: Date[] = [];
@@ -225,15 +218,6 @@ export default function CalendarBookingClient({
     }
     return days;
   }, [weekStart, displayDays]);
-
-  // 表示週で「いずれかの日に空きがある時刻」だけを行として表示（カレンダー的に時刻軸を揃える）
-  const visibleTimes = useMemo(() => {
-    const set = new Set<string>();
-    weekDays.forEach((d) => {
-      (slotsByDate[formatYmd(d)] || []).forEach((s) => set.add(s.time));
-    });
-    return Array.from(set).sort();  // "HH:MM" 文字列ソートで時刻順
-  }, [weekDays, slotsByDate]);
 
   // 「最短日」= 取得済みスロットの最初の日付（=今日から最短で空き枠が存在する日）。
   //  - スロットは GAS computeAvailableSlots_ で日付昇順に生成されるため slots[0] が最早
@@ -537,44 +521,15 @@ export default function CalendarBookingClient({
             </div>
           </div>{/* /cal-sticky-head */}
 
-          {/* 時刻グリッド: 画面幅にフィット（横スクロールなし） */}
+          {/* 時刻軸バンド（Spir式）: 連続30分をマージ・ホバー/選択は濃色チップ */}
           <div className="cal-times-wrap">
-            <div className="cal-times-grid" data-days={displayDays}>
-              {weekDays.map((d) => {
-                const ymd = formatYmd(d);
-                return (
-                  <div key={ymd} className="cal-times-col">
-                    {visibleTimes.map((time) => {
-                      const slot = slotByDateTime[`${ymd}_${time}`];
-                      if (!slot) {
-                        return (
-                          <div key={time} className="cal-empty" aria-hidden="true">
-                            ─
-                          </div>
-                        );
-                      }
-                      const isSelected = selectedSlot?.start === slot.start;
-                      return (
-                        <button
-                          key={time}
-                          type="button"
-                          className={`cal-time-pill ${isSelected ? 'sel' : ''}`}
-                          onClick={() => setSelectedSlot(slot)}
-                        >
-                          <span className="cal-time-short">{slot.time}</span>
-                          <span className="cal-time-full">{formatTimeJP(slot.time)}</span>
-                        </button>
-                      );
-                    })}
-                    {visibleTimes.length === 0 && (
-                      <div className="cal-empty" aria-hidden="true">
-                        ─
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+            <CalendarTrack
+              weekDays={weekDays}
+              displayDays={displayDays}
+              slotsByDate={slotsByDate}
+              selected={selectedSlot}
+              onSelect={(s) => setSelectedSlot(s)}
+            />
           </div>
         </div>
 
